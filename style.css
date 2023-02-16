@@ -202,6 +202,42 @@ margin-bottom: 20px;
   font-weight: 600;
   color:#727272;
 }
+.title_dsc{
+  text-align: center;
+  margin-bottom:50px;
+}
+.title_dsc h1{
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.title_dsc p{
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.sponsors{
+  width: 95%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main{
+  margin-bottom: 105px;
+}
+footer p{
+  background:rgba(255, 144, 14, 0.1);
+  padding: 30px;
+  text-align: center;
+  color:#424242;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer{
+  width: 80%;
+  margin: 10px auto;
+}
 /* responsive for mobile devices*/
 @media screen and (max-width: 576px) {
   header nav {
@@ -246,7 +282,11 @@ margin-bottom: 20px;
     flex-direction: column;
   }.icon{
     margin: 10px;
-  }
+  }.sponsors{
+    flex-direction: column;
+  }.sponsors div{
+  padding: 15px;
+}
 }
 
 
