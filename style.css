@@ -8,7 +8,7 @@
 /* header */
 header {
   background: rgba(255, 144, 14, 0.1);
-  margin-bottom: 30px;
+  margin-bottom: 115px;
   padding: 10px;
 }
 .primary_button {
@@ -69,6 +69,32 @@ nav a {
 }
 
 
+
+/* feature */
+.feature{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 130px;
+}
+.feature_gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 24px;
+}
+.feature-title{
+    margin-bottom: 24px;
+}
+.feature-title h1{
+font-size: 45px;
+font-weight: 700;
+}
+.feature-description p{
+font-size: 16px;
+color: #727272;
+line-height: 26px;
+}
+/* responsive for mobile devices*/
 @media screen and (max-width: 576px) {
   header nav {
     flex-direction: column;
@@ -82,5 +108,19 @@ nav a {
   .header-menu h1{
     font-size: 45px;
   }
+  .header-description p{
+    font-size: 16px;
+  }
+   .feature{
+    flex-direction: column;
+    gap: 30px;
+}.feature_descriptions{
+    text-align: center;
+}
+   .feature_gallery{
+    grid-template-columns: repeat(1,1fr);
+   }
   
 }
+
+
